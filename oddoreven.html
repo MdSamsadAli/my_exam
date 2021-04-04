@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>findoddoreven</title>
+</head>
+<body>
+	<form onsubmit ="checkoddoreven(); return false;">
+		<label>Take a Number to find odd or even</label>
+		<input type="text" name="num">
+		<input type="submit" value="check">
+		<p id="result"></p>
+	</form>
+	<script>
+		function checkoddoreven() {
+			// body...
+			let Number = document.forms[0].num.value;
+			console.log(Number);
+			const resultBox = document.getElementById('result');
+			if (isNaN(Number)||Number.length==0) {
+				resultBox.innerHTML = "invalid Number";}
+				else{
+					if (Number % 2 == 0) {
+						resultBox.innerHTML = "Even Number";
+					}
+					else{
+						resultBox.innerHTML = "Odd Number";
+					}
+				}
+
+			}
+		
+	</script>
+
+</body>
+</html>

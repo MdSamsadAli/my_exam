@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area of circle</title>
+</head>
+<body>
+	<form onsubmit="findArea(); return false;">
+		<label>Enter a number to find area of circle</label>
+		<input type="text" name="num">
+		<input type="submit" value="calculate">
+		<p id="result"></p>
+		<p id="presult"></p>
+
+	</form>
+	<script>
+		function findArea() {
+			// body...
+			const PI = 3.1415;
+			let radius = document.forms[0].num.value;
+			console.log(radius);
+			document.getElementById('result').innerHTML = `Area of Circle is : ${(PI*Math.pow(radius,2))} `;
+			document.getElementById('presult').innerHTML = `Perimeter of circle is : ${(2*PI*radius)}`;
+		}
+	</script>
+</body>
+</html>

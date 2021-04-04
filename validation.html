@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<script>
+		let username = prompt("Enter UserName: ");
+		let password = prompt("Enter PassWord:");
+		if (username =="" || password=="" ) {
+			alert("Enter Username and password please");
+		}
+		else if(username.length==""){
+			alert("Enter UserName");
+		}
+		else if(password.length==""){
+			alert("Enter PassWord");
+		}
+		else if(username==="admin" || password=== "admin123"){
+			alert("you are welcome!");
+		}
+		else{
+			alert("sorry! try again");
+		}
+	</script>
+
+</body>
+</html>

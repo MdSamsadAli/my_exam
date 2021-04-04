@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>checkuPPErcase</title>
+</head>
+<body>
+	<form onsubmit="upperCase(); return false;">
+		<label>Enter a String :</label>
+		<input type="text" name="string">
+		<input type="submit" value="check">
+		<p id="result"></p>
+		
+	</form>
+	<script>
+		function upperCase(){
+		let resultBox = document.forms[0].string.value;
+		// console.log(resultBox);
+		document.getElementById('result');
+		document.forms[0].string.value = resultBox.toUpperCase(); 
+	}
+
+	</script>
+
+</body>
+</html>
